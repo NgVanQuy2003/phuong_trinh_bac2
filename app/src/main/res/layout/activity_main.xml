@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Hệ số a"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="19sp"/>
+    <EditText
+        android:id="@+id/edtA"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Nhap he so a"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv1"
+        app:layout_constraintBottom_toBottomOf="@id/tv1"
+        android:layout_marginEnd="40dp"
+        />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Hệ số b"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:textSize="19sp"/>
+    <EditText
+        android:id="@+id/edtB"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Nhap he so b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv2"
+        app:layout_constraintBottom_toBottomOf="@id/tv2"
+        android:layout_marginEnd="40dp"
+        />
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Hệ số c"
+        app:layout_constraintTop_toBottomOf="@id/tv2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:textSize="19sp"/>
+    <EditText
+        android:id="@+id/edtC"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:hint="Nhap he so c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv3"
+        app:layout_constraintBottom_toBottomOf="@id/tv3"
+        android:layout_marginEnd="40dp"
+        />
+    <TextView
+        android:id="@+id/ketQua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv3"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Ket qua"
+        android:textSize="19sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:id="@+id/tvKetqua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/ketQua"
+        app:layout_constraintTop_toTopOf="@id/ketQua"
+        app:layout_constraintBottom_toBottomOf="@id/ketQua"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="ket qua"/>
+    <TextView
+        android:id="@+id/btnSolve"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="Solve"
+        android:background="#007CFF"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/ketQua"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="40dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
